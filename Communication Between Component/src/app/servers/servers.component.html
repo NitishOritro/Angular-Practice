@@ -1,0 +1,31 @@
+<p>
+  <b>Created a "Servers" component</b>
+  Then it servers works! </p>
+
+
+<button type="submit" class="btn btn-primary"
+  [disabled]="!allowNewButton"
+  (click)="onCreateServer()">Add New Server</button>
+
+  <P>Connection Established . button value is = {{ allowNewServer }}</P>
+
+  <P>Server button  is {{ onClick }} clicked, so = {{ serverCreationStatus }}</P>
+
+<!---
+
+<button type="submit" class="btn btn-primary"
+    [disabled]="!allowNewServer">Add New Server</button>
+
+
+<P>{{ allowNewServer }}</P>
+
+
+-->
+
+<input type="text" class="form-control" [(ngModel)]="userName">
+<p>{{ userName }}</p>
+<button type="submit" class="btn btn-primary"
+      [disabled]="userName === ''"
+      (click)="userName = ''">Reset Button</button>
+
+
